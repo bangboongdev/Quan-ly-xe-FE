@@ -1,0 +1,14 @@
+version: "3"
+services:
+  frontend:
+    build: .
+    image: quan_ly_chi_phi_fe
+    container_name: quan_ly_chi_phi_fe
+    restart: always
+    ports:
+      - 14442:9998
+    # command: "npm run prod"
+    # tty để theo dõi % build 
+    # tty: true
+    network_mode: bridge
+   
